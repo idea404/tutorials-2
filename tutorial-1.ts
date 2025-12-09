@@ -146,7 +146,7 @@ const pimlicoClient = createPimlicoClient({
 		],
 	})
 
-	const receipt2 = await bundlerClient.getUserOperationReceipt({
+	const receipt2 = await bundlerClient.waitForUserOperationReceipt({
 		hash: txHashMultiple,
 	})
 
